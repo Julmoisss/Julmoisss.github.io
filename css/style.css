@@ -1,0 +1,140 @@
+/* ledger-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Ledger';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/ledger-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/ledger-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/ledger-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/ledger-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/ledger-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/ledger-v11-latin_cyrillic-regular.svg#Ledger') format('svg'); /* Legacy iOS */
+  }
+header{
+    background-image: url(../images/background2.jpg);
+    background-color: rgb(186, 195, 247);
+    height: 250px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left: 40px;
+    padding-right: 350px;
+    padding-top: 40px;
+    text-align: right;
+}
+body{
+    font-family: 'Ledger' ;
+    margin: 0px;
+}
+.header-title{
+    padding-right: 20px;
+}
+.flex-menu{
+    background-color: rgb(203, 210, 255);
+    display: flex;
+    margin-left: 10px;
+    list-style-type: none;
+    align-items: center;
+    margin: 0px;
+}
+.Hlogo{
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+.menuElement{
+    margin-left: 30px;
+    border-left: 2px solid black;
+}
+.LiElement{
+    flex-grow: 1;
+}
+ul{
+    list-style-type: circle;
+}
+.background-color-dark{
+    background-color: rgb(182, 190, 248);
+    color: rgb(17, 39, 163);
+}
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 2rem 2rem 2rem 2rem;
+}
+.flex-row-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-col-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 250px;
+}
+.flex-col-div-space-around{
+    align-items: center;
+    justify-content: space-around;
+}
+footer{
+    background-color: white;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    border: 6px solid rgb(169, 181, 247);
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+.text-align{
+    text-align: center;
+}
+.padding{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+table {
+    border-collapse: collapse;
+    background: rgb(206, 206, 243);
+    border: 3px solid rgb(106, 99, 145);
+}
+.tableone{
+    background-color: rgb(182, 182, 241);
+    color: rgb(71, 71, 199);
+}
+.tabletwo{
+    color: rgb(106, 99, 145);
+}
+.tablethree{
+    color: rgb(71, 71, 199);
+    font-size: 25px;
+    padding: 10px;
+}
+td, th {
+    padding: 5px;
+    border: 2px solid white;
+}
+.paddingtwo{
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.paddingthree{
+    padding-left: 60px;
+    padding-right: 30px;
+}
+.padding-cont{
+    padding-left: 90px;
+    padding-top: 30px;
+    padding-right: 90px;
+    padding-bottom: 30px;
+}
+.divborder{
+    box-shadow: 0 0 5px 2px #9370DB;
+    width: 200px; height: 150px;
+    }
