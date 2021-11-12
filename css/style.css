@@ -138,3 +138,81 @@ td, th {
     box-shadow: 0 0 5px 2px #9370DB;
     width: 250px; height: 150px;
     }
+.grid-container{
+    display: grid;
+    grid-template-areas:
+            "d1 d2"
+            "d3 d4"
+            "d5 d6";
+    height: 100vh;
+}
+.d1{
+    grid-area: d1;
+}
+.d2{
+    grid-area: d2;
+}
+.d3{
+    grid-area: d3;
+}
+.d4{
+    grid-area: d4;
+}
+.d5{
+    grid-area: d5;
+}
+.d6{
+    grid-area: d6;
+}
+.background-grid-1{
+    background-color: white;
+}
+.background-grid{
+    background-color: red;
+    margin: 5px;
+    color: white;
+}
+.padding{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+.flex-row-div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.divborder{
+    box-shadow: 0 0 5px 2px #9370DB;
+    width: 300px; height: 500px;
+    margin-bottom: 10px;
+    margin: auto;
+}
+.divborder2{
+    width: 150px; height: 25px;
+    border: 2px solid #7d50d8;
+    background-color: rgb(134, 118, 192);
+    margin-bottom: 15px;
+    border-radius: 30px;
+}
+.margin{
+    margin: auto;
+    width: 150px; height: 25px;
+    margin-bottom: 10px;
+}
+.border-radius{
+    border-radius: 70px;
+}
+.bt{
+    left: 50%;
+    position: relative;
+    transform: translate(-50%, 0);
+}
+.hidden{
+    display: none;
+}
+.visible{
+    display: block;
+}

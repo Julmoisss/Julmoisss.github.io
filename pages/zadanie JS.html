@@ -34,10 +34,122 @@
     <h1>Веб-технологии</h1>
     <h3 class="header-title">Университет "Дубна"</h3>
 </header>
+<script>
+    function f(){
+        alert("Данные успешно отправлены!");
+
+        example = document.forma.example.value;
+        email = document.forma.email.value;
+        tel = document.forma.tel.value;
+        console.log("Данные из текстовых полей: "+example+" "+email+" "+tel);
+
+        if (document.forma.chb1.checked){
+            chb1 = document.forma.chb1.value;}
+        if (document.forma.chb2.checked){
+            chb2 = document.forma.chb2.value;}
+        if (document.forma.chb3.checked){
+            chb3 = document.forma.chb3.value;}
+        console.log("Данные из переключателей: " +chb1+" "+chb2+" "+chb3)
+
+        var question_en;
+        var question_ru;
+        var index;
+        index = document.forma.theme.selectedIndex;
+        question_en = document.forma.theme[index].value;
+        question_ru = document.forma.theme[index].text;
+        console.log("Данные из выпадающего списка: " +index+ " " +question_en+ " " +question_ru);
+
+        text="<h3> Уважаемый пользователь ";
+        text=text+ example+ ", проверьте введеные данные: </h3>";
+        text=text+"Номер телефона: " + tel +"<br>";
+        text=text+ "Информация будет отправлена на адрес: "+email+"<br>";
+        text=text+"Будем рады Вас видеть снова!";
+
+        document.getElementById("registr_forma").innerHTML=text;
+
+        //document.getElementById("Vibor").
+    }
+
+    function f1(){
+    if (document.forma.com_tion[0].checked){
+        document.getElementById("fe").classList.remove("hidden");
+        document.getElementById("fe").classList.add("visible");
+    }
+    else{
+        document.getElementById("tel").classList.remove("hidden");
+        document.getElementById("tel").classList.add("visible");
+    }
+    }
+</script>
 </head>
 
 <body>
-    
+    <div class="grid-container">
+        <div class="d1 background-grid-1">
+            <p></p>
+    <main>
+    <form action="javascript:f()" method="get" name="forma" id="registr_forma">
+    <div class="border-radius divborder padding">
+        <div>Как Вам удобно получить ответ:</div>
+        <p></p>
+        <div>
+            <label for="c_mail">
+            <input onclick="f1()" type="radio" name="com_tion" id="c_mail"> По почте </label><br>
+            <label for="c_tel">
+            <input onclick="f1()" type="radio" name="com_tion" id="c_tel"> По телефону</label><br>
+            <label for="c_none">
+            <input type="radio" name="com_tion" id="c_none"> Не нужно отвечать</label><br>
+        </div>
+        <p></p>
+        <div>
+            <label for="theme">Укажите тему вопроса</label><br>
+            <select name="theme" id="theme" class="divborder2">
+            <option value="work">работа</option>
+            <option value="cooperation">сотрудничество</option>
+            <option value="personal">личное</option>
+            </select>
+        </div> 
+        <p></p>
+        <div>
+        <div> И еще один вопрос?</div>
+            <label for="chb1">
+            <input type="checkbox" name="chb1" id="chb1" value="chb1_true">может так</label><br>
+            <label for="chb2">
+            <input type="checkbox" name="chb2" id="chb2" value="chb2_true">или не так</label><br>
+            <label for="chb3">
+            <input type="checkbox" name="chb3" id="chb3" value="chb3_true">иначе</label><br>
+        </div>
+        <p></p>
+        <div name = "Vibor">
+        <div class="flex-row-div visible">
+            <label for="example">Ваше имя</label><br>
+            <input type="text"name="example"id="example"size="30"pattern="[A-Z]+"required class="divborder2">
+        </div>
+        <div class="flex-row-div hidden" id="fe">
+            <label for="email">Адрес почты</label>
+            <input type="email" name="email" id="email" class="divborder2">
+        </div>
+        <div class="flex-row-div hidden">
+            <label for="tel">Номер телефона</label>
+            <input type="tel" name="tel" id="tel" class="divborder2">
+        </div>
+        <div>Ваш вопрос:</div>
+        <div>
+            <textarea cols="37"></textarea>
+        </div>
+        <input type="submit" value="Отправить вопрос" class="bt divborder2 margin">  
+    </form> 
+    </div> 
+    <p></p>
+    </main>
+        </div>
+        <div class="d2 background-grid"><h2>Image 2</h2></div>
+        <div class="d3 background-grid"><h2>Image 3</h2></div>
+        <div class="d4 background-grid"><h2>Image 4</h2></div>
+        <div class="d5 background-grid"><h2>Image 5</h2></div>
+        <div class="d6 background-grid"><h2>Image 6</h2></div>
+    </div>
+
     <footer class="flex-row-div">
         <div>
             <a href=""><img src="../images/vk logo.png" width="50px" height="50px" alt=""></a>
