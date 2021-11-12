@@ -51,33 +51,31 @@
             chb3 = document.forma.chb3.value;}
         console.log("Данные из переключателей: " +chb1+" "+chb2+" "+chb3)
 
-        var question_en;
-        var question_ru;
-        var index;
-        index = document.forma.theme.selectedIndex;
-        question_en = document.forma.theme[index].value;
-        question_ru = document.forma.theme[index].text;
-        console.log("Данные из выпадающего списка: " +index+ " " +question_en+ " " +question_ru);
+        //var question_en;
+        //var question_ru;
+        //var index;
+        //index = document.forma.theme.selectedIndex;
+        //question_en = document.forma.theme[index].value;
+        //question_ru = document.forma.theme[index].text;
+        //console.log("Данные из выпадающего списка: " +index+ " " +question_en+ " " +question_ru);
 
-        text="<h3> Уважаемый пользователь ";
-        text=text+ example+ ", проверьте введеные данные: </h3>";
-        text=text+"Номер телефона: " + tel +"<br>";
-        text=text+ "Информация будет отправлена на адрес: "+email+"<br>";
-        text=text+"Будем рады Вас видеть снова!";
+        //text="<h3> Уважаемый пользователь ";
+        //text=text+ example+ ", проверьте введеные данные: </h3>";
+        //text=text+"Номер телефона: " + tel +"<br>";
+        //text=text+ "Информация будет отправлена на адрес: "+email+"<br>";
+        //text=text+"Будем рады Вас видеть снова!";
 
         document.getElementById("registr_forma").innerHTML=text;
-
-        //document.getElementById("Vibor").
     }
 
     function f1(){
     if (document.forma.com_tion[0].checked){
-        document.getElementById("fe").classList.remove("hidden");
-        document.getElementById("fe").classList.add("visible");
+        document.getElementById("email").classList.remove("hidden1");
+        document.getElementById("email").classList.add("visible1");
     }
     else{
-        document.getElementById("tel").classList.remove("hidden");
-        document.getElementById("tel").classList.add("visible");
+        document.getElementById("tel").classList.remove("hidden1");
+        document.getElementById("tel").classList.add("visible1");
     }
     }
 </script>
@@ -125,11 +123,11 @@
             <label for="example">Ваше имя</label><br>
             <input type="text"name="example"id="example"size="30"pattern="[A-Z]+"required class="divborder2">
         </div>
-        <div class="flex-row-div1 hidden1" id="fe">
+        <div class="flex-row-div1 hidden1" id="email">
             <label for="email">Адрес почты</label>
             <input type="email" name="email" id="email" class="divborder2">
         </div>
-        <div class="flex-row-div1 hidden1">
+        <div class="flex-row-div1 hidden1" id="tel">
             <label for="tel">Номер телефона</label>
             <input type="tel" name="tel" id="tel" class="divborder2">
         </div>
@@ -137,7 +135,8 @@
         <div>
             <textarea cols="37"></textarea>
         </div>
-        <input type="submit" value="Отправить вопрос" class="bt divborder2 margin">  
+        <input type="submit" value="Отправить вопрос" class="bt1 divborder2 margin1"> 
+        <!--input type="reset" value="Очистить поля" class="bt1 divborder2 margin1"-->
     </form> 
     </div> 
     <p></p>
