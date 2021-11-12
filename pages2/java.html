@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>  for (i=0; i<=100;i++)
+        {
+            document.write("Hi!")
+        }alert("Hi!")
+        console.log("Hi!")
+    </script>
+    <script>
+        function f(a)
+        {
+            for (i=0; i<a; i++)
+            document.write("!");
+        }
+    </script>
+    <script>
+        function add_selectText()
+        {
+            document.getElementById("Text").classList.add("select");
+        }
+        function remove_selectText()
+        {
+            document.getElementById("Text").classList.remove("select");
+        }
+        /*document.getElementById("Text").onclick=add_selectText();
+        function f(event)
+        {
+            event.currentTarget.style.
+        }*/
+    </script>
+    <style>
+       .bigText{
+    font-size: 30px;
+    color:darkslateblue;  
+    background-color: aqua;
+       }
+       .select{
+           color: red;
+       }
+    </style>
+</head>
+<body>
+    <h1>
+    <script>
+        document.write("Hi!")
+    </script>
+    </h1>
+    <div id="test">
+    </div>
+    <script>
+        document.getElementById("test").innerText="Hello!";
+    </script>
+    <button id="btm1" onclick="k()">
+        Жми!
+    </button>
+    <button id="btm2" onclick="f(10)">
+        Тык!
+    </button>
+    <script>
+        document.getElementById("btm2").click=f;
+        document.getElementById("btm2").setAttribute("click", f)
+    </script>
+    <script>
+        document.getElementById("btm1").addEventListener("click", f);
+        function k()
+        {
+            document.getElementById("btm1").setAttribute("class", "bigText");
+        }
+    </script>
+    <div id="Text">
+        sjfajfawejfewoijfffljsafjlaFJ
+    </div>
+    <button onclick="add_selectText()">
+        1
+    </button>
+    <button onclick="remove_selectText()">
+        2
+    </button>
+    <button onclick="style.display='none'">Нажми</button>
+    <div>
+        <input type="button" id="hider" value="Нажмите, чтобы спрятать кнопку" />
+        <input type="button" id="antihider" value="Нажмите, чтобы показать кнопку" />
+
+        <input type="button" id="text" value="***" />
+    <script>
+        document.getElementById('hider').onclick = function() 
+        {
+        document.getElementById('text').hidden = true;
+        }
+        document.getElementById('antihider').onclick = function() 
+        {
+        document.getElementById('text').hidden = false;
+        }
+    </script>
+    </div>
+</body>
+</html>
