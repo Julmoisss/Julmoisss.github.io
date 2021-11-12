@@ -172,19 +172,19 @@ td, th {
     margin: 5px;
     color: white;
 }
-.padding{
+.padding1{
     padding-left: 30px;
     padding-top: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
 }
-.flex-row-div{
+.flex-row-div1{
     display: flex;
     align-items: flex-start;
     flex-direction: row;
     justify-content: space-between;
 }
-.divborder{
+.divborder1{
     box-shadow: 0 0 5px 2px #9370DB;
     width: 300px; height: 500px;
     margin-bottom: 10px;
@@ -197,22 +197,22 @@ td, th {
     margin-bottom: 15px;
     border-radius: 30px;
 }
-.margin{
+.margin1{
     margin: auto;
     width: 150px; height: 25px;
     margin-bottom: 10px;
 }
-.border-radius{
+.border-radius1{
     border-radius: 70px;
 }
-.bt{
+.bt1{
     left: 50%;
     position: relative;
     transform: translate(-50%, 0);
 }
-.hidden{
+.hidden1{
     display: none;
 }
-.visible{
+.visible1{
     display: block;
 }
