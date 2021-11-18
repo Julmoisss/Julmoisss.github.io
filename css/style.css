@@ -134,6 +134,9 @@ td, th {
     padding-right: 90px;
     padding-bottom: 30px;
 }
+.padding-sebe{
+    padding: 2em 0 15em 0;
+}
 .divborder{
     box-shadow: 0 0 5px 2px #9370DB;
     width: 250px; height: 150px;
