@@ -79,6 +79,12 @@
     }
     }
 </script>
+<script>
+    function fg(a)
+    {
+        document.images[0].src = document.images[a].src;
+    }
+</script>
 </head>
 
 <body>
@@ -142,20 +148,76 @@
     <p></p>
     </main>
         </div>
-        <div class="d2 background-grid"><h2>Image 2</h2></div>
-        <div class="d3 background-grid"><h2>Image 3</h2></div>
+        <div class="d2"><h2>Фотогалерея</h2>
+            <div>
+                <img src="../images/port1.jpg" width="400px" height="300">
+            </div>
+            <div class="flex-row-div-gal">
+                <div>
+                    <img onclick="fg(1)" src="../images/port1.jpg" width="132px" height="100px" alt=""></a>
+                </div>
+                <div>
+                    <img onclick="fg(2)" src="../images/port2.jpg" width="132px" height="100px" alt=""></a>
+                </div>
+                <div>
+                    <img onclick="fg(3)" src="../images/port3.jpg" width="132px" height="100px" alt=""></a>
+                </div>
+            </div>
+            <button onclick="start()">Start</button>
+            <button onclick="stop()">Stop</button>
+            <script>
+                id = null;
+                a = 0;
+                function start()
+                {
+                    //alert("!");
+                    document.images[0].src = document.images[a].src;
+                    document.images[a].classList.add("border-gal");
+                    document.images[a-1].classList.remove("border-gal");
+        
+                    if (a == 3)
+                    {
+                        a = 0;
+                    }
+                    
+                    if (a == 1)
+                    {
+        
+                    }
+                    a = a + 1;
+                    //alert(a);
+                    id = setTimeout("start()", 1000);
+                }
+                function stop()
+                {
+                    clearTimeout(id);
+                }
+            </script>
+        </div>
+        <div class="d3">
+            <div class="divborder-text">
+            <div class="noselect">
+                Смешной кот
+            </div>
+            <div>
+                <a href=""><img src="../images/comp4.jpg" width="200px" height="150px" alt=""></a>
+            </div>
+            </div>
+        </div>
         <div class="d4 background-grid"><h2>Image 4</h2></div>
         <div class="d5 background-grid"><h2>Image 5</h2></div>
         <div class="d6 background-grid"><h2>Image 6</h2></div>
+        <div class="d7">
+            <footer class="flex-row-div">
+                <div>
+                    <a href=""><img src="../images/vk logo.png" width="50px" height="50px" alt=""></a>
+                    <a href=""><img src="../images/inst logo.png" width="50px" height="50px" alt=""></a>
+                    <a href=""><img src="../images/git logo.png" width="50px" height="50px" alt=""></a>
+                </div>
+                <p>Cайт разработан ФИ, Copyright © 2021</p>
+            </footer>
+        </div>
     </div>
 
-    <footer class="flex-row-div">
-        <div>
-            <a href=""><img src="../images/vk logo.png" width="50px" height="50px" alt=""></a>
-            <a href=""><img src="../images/inst logo.png" width="50px" height="50px" alt=""></a>
-            <a href=""><img src="../images/git logo.png" width="50px" height="50px" alt=""></a>
-        </div>
-        <p>Cайт разработан ФИ, Copyright © 2021</p>
-    </footer>
 </body>
 </html>
