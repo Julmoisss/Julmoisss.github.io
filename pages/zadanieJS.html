@@ -70,26 +70,42 @@
 
     function f1(){
     if (document.forma.com_tion[0].checked){
+        document.getElementById("tel").classList.remove("vidable1");
         document.getElementById("email").classList.remove("hidden1");
+        document.getElementById("tel").classList.add("hidden1");
         document.getElementById("email").classList.add("visible1");
     }
-    else{
+    else if(document.ex_form.com_tion[1].checked){
         document.getElementById("tel").classList.remove("hidden1");
-        document.getElementById("tel").classList.add("visible1");
+        document.getElementById("email").classList.remove("visable1");
+        document.getElementById("email").classList.add("hidden1");
+        document.getElementById("tel").classList.add("visable1");
+    }
+    else if(document.ex_form.com_tion[1].checked){
+        document.getElementById("tel").classList.remove("visable1");
+        document.getElementById("email").classList.remove("visable1");
+        document.getElementById("email").classList.add("hidden1");
+        document.getElementById("tel").classList.add("hidden1");
     }
     }
 </script>
 <script>
     function fg(a)
     {
-        document.images[0].src = document.images[a].src;
+        document.images[1].src = document.images[a].src;
+    }
+</script>
+<script>
+    function tx(n)
+    {
+
     }
 </script>
 </head>
 
 <body>
-    <div class="grid-container">
-        <div class="d1 background-grid-1">
+    <div class="container-flex" id="container-flex">
+        <div class="item-flex"><h2>Форма</h2>
             <p></p>
     <main>
     <form action="javascript:f()" method="get" name="forma" id="registr_forma">
@@ -148,19 +164,19 @@
     <p></p>
     </main>
         </div>
-        <div class="d2"><h2>Фотогалерея</h2>
+        <div class="item-flex" style="text-align: center;"><h2>Фотогалерея</h2>
             <div>
-                <img src="../images/port1.jpg" width="400px" height="300">
+                <img src="../images/port1.jpg" width="500px" height="300">
             </div>
-            <div class="flex-row-div-gal">
+            <div class="flex-row-div">
                 <div>
-                    <img onclick="fg(1)" src="../images/port1.jpg" width="132px" height="100px" alt=""></a>
+                    <img onclick="fg(2)" src="../images/port1.jpg" width="230px" height="170px" alt=""></a>
                 </div>
                 <div>
-                    <img onclick="fg(2)" src="../images/port2.jpg" width="132px" height="100px" alt=""></a>
+                    <img onclick="fg(3)" src="../images/port2.jpg" width="230px" height="170px" alt=""></a>
                 </div>
                 <div>
-                    <img onclick="fg(3)" src="../images/port3.jpg" width="132px" height="100px" alt=""></a>
+                    <img onclick="fg(4)" src="../images/port3.jpg" width="230px" height="170px" alt=""></a>
                 </div>
             </div>
             <button onclick="start()">Start</button>
@@ -194,30 +210,73 @@
                 }
             </script>
         </div>
-        <div class="d3">
+        <div class="item-flex" style="text-align: center;"><h2>Нельзя копировать текст</h2>
             <div class="divborder-text">
             <div class="noselect">
                 Смешной кот
             </div>
             <div>
-                <a href=""><img src="../images/comp4.jpg" width="200px" height="150px" alt=""></a>
+                <a href=""><img src="../images/comp4.jpg" width="400px" height="250px" alt=""></a>
             </div>
             </div>
         </div>
-        <div class="d4 background-grid"><h2>Image 4</h2></div>
-        <div class="d5 background-grid"><h2>Image 5</h2></div>
-        <div class="d6 background-grid"><h2>Image 6</h2></div>
-        <div class="d7">
-            <footer class="flex-row-div">
-                <div>
-                    <a href=""><img src="../images/vk logo.png" width="50px" height="50px" alt=""></a>
-                    <a href=""><img src="../images/inst logo.png" width="50px" height="50px" alt=""></a>
-                    <a href=""><img src="../images/git logo.png" width="50px" height="50px" alt=""></a>
-                </div>
-                <p>Cайт разработан ФИ, Copyright © 2021</p>
-            </footer>
+        <div class="item-flex"><h2>Image 4</h2>
+            <div>
+                <textarea cols="20" id="txt"></textarea>
+            </div>
+            <div><button>Click</button></div> 
+            <script>
+                //document.getElementById("txt").oninput=function(){alert("input")}
+                //document.getElementById("txt").onchange=function(){alert("change")}
+                //document.getElementById("txt").onkeypress=function(){alert("keypress")}
+
+                document.getElementById("txt").onchange=function(){
+                    localStorage.setItem('savetxt', document.getElementById("txt").value)}
+                    document.getElementById('txt').value = localStorage.getItem('savetxt');
+                //document.getElementById("txt").input=function(){
+                    //alert("change")}
+                //document.getElementById("txt").onkeypress=function(){
+                    //alert("keypress")}
+            </script>
+        </div>
+        <div class="item-flex"><h2>Диаграмма</h2>
+            <input type="text" id="count">
+            <button onclick="fd()">Yes</button>
+            <button onclick="">Удалить</button>
+            <div id="textFields"></div>
+        <canvas id="canvas" width="600" height="400"
+        style="border:5px solid  #9370DB;"> 
+        </canvas>
+        <script>
+            function fd(){
+                let ar = [];
+                let count = document.getElementById("count").value;
+                for(i = 0; i<count;i++){
+                    let tf = document.createElement("input");
+                    tf.type="text";
+                    tf.className="tf";
+                    ar.push(tf);
+                    document.getElementById("textFields").append(tf);
+                }
+            }
+        </script>
+        <script>
+            let canvas = document.getElementById("canvas");
+            let g = canvas.getContext("2d");
+        </script>
+        </div>
+        <div class="item-flex"><h2>Image 6</h2></div>
         </div>
     </div>
+    </main>
+        <footer class="flex-row-div">
+            <div>
+                <a href=""><img src="../images/vk logo.png" width="50px" height="50px" alt=""></a>
+                <a href=""><img src="../images/inst logo.png" width="50px" height="50px" alt=""></a>
+                <a href=""><img src="../images/git logo.png" width="50px" height="50px" alt=""></a>
+            </div>
+            <p>Cайт разработан ФИ, Copyright © 2021</p>
+        </footer>
 
 </body>
 </html>

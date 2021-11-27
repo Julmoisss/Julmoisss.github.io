@@ -141,43 +141,18 @@ td, th {
     box-shadow: 0 0 5px 2px #9370DB;
     width: 250px; height: 150px;
     }
-.grid-container{
-    display: grid;
-    grid-template-areas:
-            "d1 d2"
-            "d3 d4"
-            "d5 d6"
-            "d7 d7";
-    height: 100vh;
+
+.container-flex{
+    border: 5px solid  rgb(206, 206, 243);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.d1{
-    grid-area: d1;
-}
-.d2{
-    grid-area: d2;
-}
-.d3{
-    grid-area: d3;
-}
-.d4{
-    grid-area: d4;
-}
-.d5{
-    grid-area: d5;
-}
-.d6{
-    grid-area: d6;
-}
-.d7{
-    grid-area: d7;
-}
-.background-grid-1{
-    background-color: white;
-}
-.background-grid{
-    background-color: red;
-    margin: 5px;
-    color: white;
+
+.item-flex{
+padding: 10px;
+border: 2px solid  rgb(206, 206, 243);
+flex: 1 1 45%;
 }
 .padding1{
     padding-left: 30px;
@@ -223,13 +198,8 @@ td, th {
 .visible1{
     display: block;
 }
-.flex-row-div-gal{
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row; 
-}
 .border-gal{
-    border: 5px solid #06608a;
+    border: 5px solid #7d50d8;
 }
 .divborder-text {
     margin-bottom: 10px;
@@ -242,3 +212,7 @@ td, th {
     -o-user-select: none;
     user-select: none;
     }
+.tf{
+    width: 10px;
+    margin: 5px;
+}
