@@ -101,12 +101,99 @@
 
     }
 </script>
+
+<script>
+    function first() {
+    document.getElementById("second_hide").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy").setAttribute("style", "display: block");
+    }
+    function first_yelloy() {
+    document.getElementById("second_hide").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy").setAttribute("style", "display: none");
+    document.getElementById("first").setAttribute("style", "display: block");
+    }
+</script>
+
+<script>
+    function first1() {
+    document.getElementById("second_hide1").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first1").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy1").setAttribute("style", "display: block");
+    }
+    function first_yelloy1() {
+    document.getElementById("second_hide1").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy1").setAttribute("style", "display: none");
+    document.getElementById("first1").setAttribute("style", "display: block");
+    }
+</script>
+
+<script>
+    function first2() {
+    document.getElementById("second_hide2").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first2").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy2").setAttribute("style", "display: block");
+    }
+    function first_yelloy2() {
+    document.getElementById("second_hide2").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy2").setAttribute("style", "display: none");
+    document.getElementById("first2").setAttribute("style", "display: block");
+    }
+</script>
+
+<script>
+    function first3() {
+    document.getElementById("second_hide3").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first3").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy3").setAttribute("style", "display: block");
+    }
+    function first_yelloy3() {
+    document.getElementById("second_hide3").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy3").setAttribute("style", "display: none");
+    document.getElementById("first3").setAttribute("style", "display: block");
+    }
+</script>
+
+<script>
+    function first4() {
+    document.getElementById("second_hide4").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first4").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy4").setAttribute("style", "display: block");
+    }
+    function first_yelloy4() {
+    document.getElementById("second_hide4").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy4").setAttribute("style", "display: none");
+    document.getElementById("first4").setAttribute("style", "display: block");
+    }
+</script>
+
+<script>
+    function first5() {
+    document.getElementById("second_hide5").setAttribute("style", "opacity:1; transition: 1s; height: 100%;");
+    document.getElementById("first5").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy5").setAttribute("style", "display: block");
+    }
+    function first_yelloy5() {
+    document.getElementById("second_hide5").setAttribute("style", "display: none");
+    document.getElementById("first_yelloy5").setAttribute("style", "display: none");
+    document.getElementById("first5").setAttribute("style", "display: block");
+    }
+</script>
 </head>
 
 <body>
+    
     <div class="container-flex" id="container-flex">
-        <div class="item-flex"><h2>Форма</h2>
-            <p></p>
+
+        <!--div class="item-flex"><h2>Форма</h2>
+            <p></p-->
+
+            <div class="item-flex" style="text-align: center;">
+                <h2 id="first" onclick="first()">Форма</h2>
+                <h2 id="first_yelloy"; style="display:none" onclick="first_yelloy()">Форма </h2>
+                <div id="second_hide" style="display:none">
+            <!--div id="example_2" style="display:block;"-->
+
     <main>
     <form action="javascript:f()" method="get" name="forma" id="registr_forma">
     <div class="border-radius1 divborder1 padding1">
@@ -163,20 +250,33 @@
     </div> 
     <p></p>
     </main>
-        </div>
-        <div class="item-flex" style="text-align: center;"><h2>Фотогалерея</h2>
+</div>
+
+</div>
+    <!--button id="example_2_1" onclick="document.getElementById('example_2').style.display='block'; 
+document.getElementById('example_2_1').style.display='none'; 
+document.getElementById('example_2_2').style.display='block';" 
+style="display:none;">Показать</button>
+
+<button id="example_2_2" onclick=" document.getElementById('example_2').style.display='none'; 
+document.getElementById('example_2_2').style.display='none'; 
+document.getElementById('example_2_1').style.display='block';">Скрыть</button-->
+    </div>
+        <div class="item-flex" style="text-align: center;"><h2 id="first1" onclick="first1()">Фотогалерея</h2>
+            <h2 id="first_yelloy1"; style="display:none" onclick="first_yelloy1()">Фотогалерея </h2>
+            <div id="second_hide1" style="display:none">     
             <div>
                 <img src="../images/port1.jpg" width="500px" height="300">
             </div>
             <div class="flex-row-div">
                 <div>
-                    <img onclick="fg(2)" src="../images/port1.jpg" width="230px" height="170px" alt=""></a>
+                    <img onclick="fg(2)" src="../images/port1.jpg" width="350x" height="230px" alt=""></a>
                 </div>
                 <div>
-                    <img onclick="fg(3)" src="../images/port2.jpg" width="230px" height="170px" alt=""></a>
+                    <img onclick="fg(3)" src="../images/port2.jpg" width="350px" height="230px" alt=""></a>
                 </div>
                 <div>
-                    <img onclick="fg(4)" src="../images/port3.jpg" width="230px" height="170px" alt=""></a>
+                    <img onclick="fg(4)" src="../images/port3.jpg" width="350px" height="230px" alt=""></a>
                 </div>
             </div>
             <button onclick="start()">Start</button>
@@ -187,9 +287,9 @@
                 function start()
                 {
                     //alert("!");
-                    document.images[0].src = document.images[a].src;
-                    document.images[a].classList.add("border-gal");
-                    document.images[a-1].classList.remove("border-gal");
+                    //document.images[0].src = document.images[a].src;
+                    //document.images[a].classList.add("border-gal");
+                    //document.images[a-1].classList.remove("border-gal");
         
                     if (a == 3)
                     {
@@ -210,7 +310,11 @@
                 }
             </script>
         </div>
-        <div class="item-flex" style="text-align: center;"><h2>Нельзя копировать текст</h2>
+    </div>
+</div>
+        <div class="item-flex" style="text-align: center;"><h2 id="first2" onclick="first2()">Нельзя копировать текст</h2>
+            <h2 id="first_yelloy2"; style="display:none" onclick="first_yelloy2()">Нельзя копировать текст</h2>
+            <div id="second_hide2" style="display:none">  
             <div class="divborder-text">
             <div class="noselect">
                 Смешной кот
@@ -220,7 +324,11 @@
             </div>
             </div>
         </div>
-        <div class="item-flex"><h2>Image 4</h2>
+    </div>
+</div>
+        <div class="item-flex" style="text-align: center;"><h2 id="first3" onclick="first3()">image 4</h2>
+            <h2 id="first_yelloy3"; style="display:none" onclick="first_yelloy3()">image 4</h2>
+            <div id="second_hide3" style="display:none">  
             <div>
                 <textarea cols="20" id="txt"></textarea>
             </div>
@@ -239,7 +347,11 @@
                     //alert("keypress")}
             </script>
         </div>
-        <div class="item-flex"><h2>Диаграмма</h2>
+    </div>
+</div>
+        <div class="item-flex" style="text-align: center;"><h2 id="first4" onclick="first4()">Диаграмма</h2>
+            <h2 id="first_yelloy4"; style="display:none" onclick="first_yelloy4()">Диаграмма</h2>
+            <div id="second_hide4" style="display:none">  
             <input type="text" id="count">
             <button onclick="fd()">Yes</button>
             <button onclick="">Удалить</button>
@@ -310,9 +422,16 @@
             let g = canvas.getContext("2d");
         </script>
         </div>
-        <div class="item-flex"><h2>Image 6</h2></div>
+    </div>
+</div>
+        <div class="item-flex" style="text-align: center;"><h2 id="first5" onclick="first5()">image 6</h2>
+        <h2 id="first_yelloy5"; style="display:none" onclick="first_yelloy5()">image 6</h2>
+        <div id="second_hide5" style="display:none">  
+            <p>ываша</p>
+        </div>
         </div>
     </div>
+</div>
     </main>
         <footer class="flex-row-div">
             <div>

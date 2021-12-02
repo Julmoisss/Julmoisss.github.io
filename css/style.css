@@ -143,7 +143,7 @@ td, th {
     }
 
 .container-flex{
-    border: 5px solid  rgb(206, 206, 243);
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -187,11 +187,11 @@ flex: 1 1 45%;
 .border-radius1{
     border-radius: 70px;
 }
-.bt1{
+/*.bt1{
     left: 50%;
     position: relative;
     transform: translate(-50%, 0);
-}
+}*/
 .hidden1{
     display: none;
 }
@@ -216,3 +216,114 @@ flex: 1 1 45%;
     width: 10px;
     margin: 5px;
 }
+
+.first {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+.first1 {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy1 {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+.first2 {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy2 {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+.first3 {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy3 {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+.first4 {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy4 {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+.first5 {
+    cursor: pointer;
+    font-family: cursive;
+    line-height: 13px;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1px solid #d2d2d2;
+    font-size: 18px;
+    }
+.first_yelloy5 {
+    cursor: pointer;
+    background: #7d50d8;
+    font-size: 18px;
+    color: white;
+    text-indent: 22px;
+    line-height: 33px;
+    border: 1PX SOLID #7d50d8;
+    }
+    
+    
